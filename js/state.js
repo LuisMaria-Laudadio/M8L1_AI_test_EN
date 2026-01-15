@@ -54,7 +54,7 @@ export const steps = {
     ai: "Hmm… looks like it…",
     aiStatus: "I might be wrong.",
 
-    aiAfter: "Now I see the differences!",
+    aiAfter: "Now I see the difference!",
     aiStatusAfter: "Not everything round is a backpack."
   }
 };
