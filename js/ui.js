@@ -18,29 +18,29 @@ function renderLeft() {
 
   if (state.step === 1) {
     imgs = [
-      [IMAGES.red, "Red"],
-      [IMAGES.blue, "Blue"],
-      [IMAGES.toy, "With keychain"]
+      [IMAGES.red, "Rojo"],
+      [IMAGES.blue, "Azul"],
+      [IMAGES.toy, "Con llavero"]
     ];
   }
 
   if (state.step === 2 || state.step === 4) {
-    imgs = [[IMAGES.black, "Test"]];
+    imgs = [[IMAGES.black, "Prueba"]];
   }
 
   if (state.step === 3) {
     imgs = [
-      [IMAGES.red,"Red"],
-      [IMAGES.blue,"Blue"],
-      [IMAGES.toy,"With keychain"],
-      [IMAGES.black,"Black"],
-      [IMAGES.sport,"Sport"],
-      [IMAGES.kid,"Kids"]
+      [IMAGES.red,"Rojo"],
+      [IMAGES.blue,"Azul"],
+      [IMAGES.toy,"Con llavero"],
+      [IMAGES.black,"Negro"],
+      [IMAGES.sport,"Deporte"],
+      [IMAGES.kid,"Niños"]
     ];
   }
 
   if (state.step === 5) {
-    imgs = [[IMAGES.bag, "Bag"]];
+    imgs = [[IMAGES.bag, "Mochila"]];
   }
 
   document.getElementById("imageGrid").innerHTML = `
@@ -54,7 +54,7 @@ function renderLeft() {
 }
 
 function renderRight() {
-  const r = document.getElementById("right");
+  const r = document.getElementById("bien");
   const s = steps[state.step];
 
   r.innerHTML = `
@@ -76,8 +76,8 @@ function renderRight() {
     </div>
 
     <div class="controls">
-      <button class="btn btn-main" id="btnTrain">✨ Action</button>
-      <button class="btn btn-next" id="btnNext" style="display:none;">Next ▶</button>
+      <button class="btn btn-main" id="btnTrain">✨ Acción</button>
+      <button class="btn btn-next" id="btnNext" style="display:none;">Siguiente ▶</button>
     </div>
   `;
 }
